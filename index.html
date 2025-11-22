@@ -2,78 +2,199 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sammy | Portfolio</title>
+    <title>Samridhi | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SXL8VQ+ZtKMYlC8t1qH7R2d1V5lqz9qXG3GyySrwMZUtgqQ4CxoI4dyFZ2RC5qF0k0yTFAKq4bQ9H0iJYbQF3g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
     <link rel="stylesheet" href="style.css">
-    <!-- jQuery CDN (optional but mentioned in assignment) -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <div class="logo">Sammy</div>
+<header class="header">
+    <nav class="navbar container">
+        <div class="logo">Samridhi<span>.</span></div>
         <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="biodata.html">Bio-data</a></li>
         </ul>
-        <button id="themeToggle">🌙</button>
+        <button id="themeToggle" class="theme-btn" title="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
     </nav>
 </header>
 
 <main>
-    <section class="hero">
+    <!-- HERO -->
+    <section class="hero container">
         <div class="hero-text">
-            <h1>Hi, I'm <span>Sammy</span></h1>
-            <p>
-                A passionate Computer Science Engineering student, eager to learn, build projects,
-                and participate in hackathons.
+            <p class="eyebrow">Computer Science Engineering Student</p>
+            <h1>Hi, I'm <span>Samridhi</span></h1>
+            <p class="hero-sub">
+                I love building modern web applications, exploring cloud computing,
+                and participating in hackathons. My goal is to grow into a skilled
+                Cloud / Software Engineer and work on impactful projects in Japan.
             </p>
-            <a href="resume.html" class="btn">View Resume</a>
-            <a href="biodata.html" class="btn btn-outline">View Bio-data</a>
+            <div class="hero-actions">
+                <a href="resume.html" class="btn primary"><i class="fa-solid fa-file-lines"></i> View Resume</a>
+                <a href="biodata.html" class="btn ghost"><i class="fa-solid fa-user"></i> View Bio-data</a>
+            </div>
+            <div class="hero-info">
+                <div>
+                    <h3>Tech Stack</h3>
+                    <p>HTML, CSS, JavaScript, Python, C/C++, Git, basics of AWS</p>
+                </div>
+                <div>
+                    <h3>Currently</h3>
+                    <p>Studying CSE in Bangalore & learning AWS + Japanese (JLPT N5)</p>
+                </div>
+            </div>
         </div>
-        <div class="hero-card">
-            <h2>Quick Info</h2>
-            <ul>
-                <li><strong>Degree:</strong> B.E / B.Tech in CSE</li>
-                <li><strong>Location:</strong> Bangalore, India</li>
-                <li><strong>Interests:</strong> Cloud, Web Dev, Hackathons</li>
+        <div class="hero-card glass">
+            <div class="avatar-circle">
+                <span>Ｓ</span>
+            </div>
+            <h2>Samridhi</h2>
+            <p class="tagline">Aspiring Cloud & Full-Stack Engineer</p>
+            <ul class="hero-list">
+                <li><i class="fa-solid fa-location-dot"></i> Bangalore, India</li>
+                <li><i class="fa-solid fa-graduation-cap"></i> B.E. in Computer Science</li>
+                <li><i class="fa-solid fa-envelope"></i> youremail@example.com</li>
             </ul>
+            <div class="socials">
+                <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </div>
     </section>
 
-    <section class="section" id="skills">
-        <h2>Key Skills</h2>
-        <div class="chip-container">
-            <span class="chip">HTML5</span>
-            <span class="chip">CSS3</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">Python</span>
-            <span class="chip">C / C++</span>
-            <span class="chip">Git & GitHub</span>
-            <span class="chip">Cloud Basics (AWS)</span>
+    <!-- SKILLS -->
+    <section class="section container">
+        <div class="section-header">
+            <h2>Skills & Tools</h2>
+            <p>A mix of development, cloud and problem-solving skills.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card glass">
+                <h3>Programming</h3>
+                <p>C, C++, Python, JavaScript</p>
+                <div class="skill-bar"><span style="width: 80%"></span></div>
+            </div>
+            <div class="skill-card glass">
+                <h3>Web Technologies</h3>
+                <p>HTML5, CSS3, basic jQuery, responsive design</p>
+                <div class="skill-bar"><span style="width: 85%"></span></div>
+            </div>
+            <div class="skill-card glass">
+                <h3>Cloud & Dev Tools</h3>
+                <p>AWS basics, Git & GitHub, VS Code, Linux</p>
+                <div class="skill-bar"><span style="width: 70%"></span></div>
+            </div>
+            <div class="skill-card glass">
+                <h3>Soft Skills</h3>
+                <p>Teamwork, communication, time management, curiosity</p>
+                <div class="skill-bar"><span style="width: 90%"></span></div>
+            </div>
         </div>
     </section>
 
-    <section class="section" id="projects">
-        <h2>Mini Projects</h2>
-        <div class="card-grid">
-            <div class="card">
-                <h3>Recruitment Website</h3>
-                <p>Developed a responsive recruitment portal prototype with multiple pages and
-                   user-friendly navigation.</p>
+    <!-- PROJECTS -->
+    <section class="section alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Highlighted Projects</h2>
+                <p>Some academic and personal projects that helped me learn real-world skills.</p>
             </div>
-            <div class="card">
-                <h3>Smart Vending Mechanism</h3>
-                <p>Conceptualized an IoT-based vending system with RFID, sensors, and cloud
-                   integration for real-time tracking.</p>
+
+            <div class="cards-grid">
+                <article class="project-card glass">
+                    <h3>Smart Vending Machine (IoT & Cloud Concept)</h3>
+                    <p>
+                        Designed a smart vending mechanism using RFID tags and sensors for
+                        automated product dispensing, real-time inventory tracking, and
+                        predictive restocking via cloud connectivity.
+                    </p>
+                    <ul>
+                        <li>RFID for item identification and access control</li>
+                        <li>IoT sensors for condition monitoring & alerts</li>
+                        <li>Designed AR try-on concept for user engagement</li>
+                    </ul>
+                </article>
+
+                <article class="project-card glass">
+                    <h3>SinkaCo.ltp – Recruitment Website</h3>
+                    <p>
+                        Multi-page recruitment portal with job listings, application forms,
+                        and basic admin structure. Focused on clean UI and smooth navigation.
+                    </p>
+                    <ul>
+                        <li>Built with HTML, CSS, and JavaScript</li>
+                        <li>Responsive layout for mobile & desktop</li>
+                        <li>Form validation for candidate applications</li>
+                    </ul>
+                </article>
+
+                <article class="project-card glass">
+                    <h3>Personal Portfolio & Resume Site</h3>
+                    <p>
+                        A hosted portfolio website (this site!) showcasing my resume,
+                        bio-data, skills, and projects using GitHub Pages.
+                    </p>
+                    <ul>
+                        <li>Deployed on GitHub Pages (cloud hosting)</li>
+                        <li>Uses modern UI, glassmorphism and dark mode</li>
+                        <li>Structured, multi-page layout for academics</li>
+                    </ul>
+                </article>
             </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container">
+        <div class="section-header">
+            <h2>Contact</h2>
+            <p>Feel free to connect for opportunities, collaborations, or hackathons!</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card glass">
+                <h3>Details</h3>
+                <p><i class="fa-solid fa-envelope"></i> youremail@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91-98XXXXXX12</p>
+                <p><i class="fa-solid fa-location-dot"></i> Bangalore, India</p>
+            </div>
+            <form class="contact-form glass">
+                <h3>Quick Message (UI only)</h3>
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="you@example.com">
+                </div>
+                <div class="form-field">
+                    <label for="msg">Message</label>
+                    <textarea id="msg" rows="3" placeholder="Write your message..."></textarea>
+                </div>
+                <button type="button" class="btn primary" id="fakeSubmit">
+                    <i class="fa-solid fa-paper-plane"></i> Send (Demo)
+                </button>
+                <p class="tiny-note">This is a demo form for portfolio, not connected to a backend.</p>
+            </form>
         </div>
     </section>
 </main>
 
-<footer>
-    <p>© 2025 Sammy | Portfolio</p>
+<footer class="footer">
+    <p>© <span id="year"></span> Samridhi • Built with ❤ using HTML, CSS & JavaScript</p>
 </footer>
 </body>
 </html>
